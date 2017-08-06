@@ -8,4 +8,6 @@ app	../hello.py	/^app = Flask(__name__)$/;"	kind:variable	line:5
 bootstrap	../hello.py	/^bootstrap = Bootstrap(app)$/;"	kind:variable	line:6
 hello.py	../hello.py	1;"	kind:file	line:1
 index	../hello.py	/^def index():$/;"	kind:function	line:10
+internal_server_error	../hello.py	/^def internal_server_error(e):$/;"	kind:function	line:24
+page_not_found	../hello.py	/^def page_not_found(e):$/;"	kind:function	line:20
 usea	../hello.py	/^def usea(name):$/;"	kind:function	line:16
