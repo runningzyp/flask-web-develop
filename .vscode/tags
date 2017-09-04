@@ -4,10 +4,103 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-app	../hello.py	/^app = Flask(__name__)$/;"	kind:variable	line:5
-bootstrap	../hello.py	/^bootstrap = Bootstrap(app)$/;"	kind:variable	line:6
+Config	../config.py	/^class Config:$/;"	kind:class	line:5
+DEBUG	../config.py	/^    DEBUG = True$/;"	kind:variable	line:19
+DevelopmentConfig	../config.py	/^class DevelopmentConfig(Config):$/;"	kind:class	line:18
+FLASKY_MAIL_SENDER	../config.py	/^    FLASKY_MAIL_SENDER = 'zhanyunpeng1996@163.com'$/;"	kind:variable	line:10
+FLASKY_MAIL_SUBJECT_PREFIX	../config.py	/^    FLASKY_MAIL_SUBJECT_PREFIX = '[FLasky]'$/;"	kind:variable	line:9
+FlASKY_ADMIN	../config.py	/^    FlASKY_ADMIN = None$/;"	kind:variable	line:11
+MAIL_PASSWORD	../config.py	/^    MAIL_PASSWORD = 'zhan1996'$/;"	kind:variable	line:24
+MAIL_PORT	../config.py	/^    MAIL_PORT = 465$/;"	kind:variable	line:21
+MAIL_SERVER	../config.py	/^    MAIL_SERVER = 'smtm.163.com'$/;"	kind:variable	line:20
+MAIL_USERNAME	../config.py	/^    MAIL_USERNAME = 'zhanyunpeng1996@163.com'$/;"	kind:variable	line:23
+MAIL_USE_SSL	../config.py	/^    MAIL_USE_SSL = True$/;"	kind:variable	line:22
+NameForm	../app/main/forms.py	/^class NameForm(FlaskForm):$/;"	kind:class	line:6
+NameForm	../hello.py	/^class NameForm(FlaskForm):$/;"	kind:class	line:86
+ProductionConfig	../config.py	/^class ProductionConfig(Config):$/;"	kind:class	line:35
+Role	../app/models.py	/^class Role(db.Model):$/;"	kind:class	line:4
+Role	../hello.py	/^class Role(db.Model):$/;"	kind:class	line:48
+SECRET_KEY	../config.py	/^    SECRET_KEY = os.environ.get('SECRET_KEY')or 'hard to guess string'$/;"	kind:variable	line:6
+SQLALCHEMY_COMMIT_ON_TEARDOWN	../config.py	/^    SQLALCHEMY_COMMIT_ON_TEARDOWN = True$/;"	kind:variable	line:7
+SQLALCHEMY_DATABASE_URI	../config.py	/^        'sqlite:\/\/\/' + os.path.join(basedir, 'data-dev.sqlite')$/;"	kind:variable	line:26
+SQLALCHEMY_DATABASE_URI	../config.py	/^        'sqlite:\/\/\/' + os.path.join(basedir, 'data-test.sqlite')$/;"	kind:variable	line:32
+SQLALCHEMY_DATABASE_URI	../config.py	/^        'sqlite:\/\/\/' + os.path.join(basedir, 'data.sqlite')$/;"	kind:variable	line:37
+SQLALCHEMY_TRACK_MODIFICATIONS	../config.py	/^    SQLALCHEMY_TRACK_MODIFICATIONS = False$/;"	kind:variable	line:8
+TESTING	../config.py	/^    TESTING = True$/;"	kind:variable	line:30
+TestingConfig	../config.py	/^class TestingConfig(Config):$/;"	kind:class	line:29
+User	../app/models.py	/^class User(db.Model):$/;"	kind:class	line:14
+User	../hello.py	/^class User(db.Model):$/;"	kind:class	line:58
+__init__.py	../app/__init__.py	1;"	kind:file	line:1
+__init__.py	../app/main/__init__.py	1;"	kind:file	line:1
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:10
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:20
+__repr__	../hello.py	/^    def __repr__(self):$/;"	kind:member	line:54
+__repr__	../hello.py	/^    def __repr__(self):$/;"	kind:member	line:64
+__tablename__	../app/models.py	/^    __tablename__ = 'roles'$/;"	kind:variable	line:5
+__tablename__	../app/models.py	/^    __tablename__ = 'users'$/;"	kind:variable	line:15
+__tablename__	../hello.py	/^    __tablename__ = 'roles'$/;"	kind:variable	line:49
+__tablename__	../hello.py	/^    __tablename__ = 'users'$/;"	kind:variable	line:59
+admin_role	../tests/sqltest.py	/^admin_role = Role(name='Admin')$/;"	kind:variable	line:10
+app	../hello.py	/^app = Flask(__name__)$/;"	kind:variable	line:22
+app	../manage.py	/^app = create_app('default')$/;"	kind:variable	line:11
+basedir	../config.py	/^basedir = os.path.abspath(os.path.dirname(__file__))$/;"	kind:variable	line:2
+basedir	../hello.py	/^basedir = os.path.abspath(os.path.dirname(__file__))$/;"	kind:variable	line:20
+bootstrap	../app/__init__.py	/^bootstrap = Bootstrap()$/;"	kind:variable	line:10
+bootstrap	../hello.py	/^bootstrap = Bootstrap(app)$/;"	kind:variable	line:43
+config	../config.py	/^config = {$/;"	kind:variable	line:40
+config.py	../config.py	1;"	kind:file	line:1
+create_app	../app/__init__.py	/^def create_app(config_name):$/;"	kind:function	line:20
+db	../app/__init__.py	/^db = SQLAlchemy()$/;"	kind:variable	line:13
+db	../hello.py	/^db = SQLAlchemy(app)$/;"	kind:variable	line:42
+email.py	../app/email.py	1;"	kind:file	line:1
+errors.py	../app/main/errors.py	1;"	kind:file	line:1
+forms.py	../app/main/forms.py	1;"	kind:file	line:1
 hello.py	../hello.py	1;"	kind:file	line:1
-index	../hello.py	/^def index():$/;"	kind:function	line:10
-internal_server_error	../hello.py	/^def internal_server_error(e):$/;"	kind:function	line:24
-page_not_found	../hello.py	/^def page_not_found(e):$/;"	kind:function	line:20
-usea	../hello.py	/^def usea(name):$/;"	kind:function	line:16
+id	../app/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:16
+id	../app/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:6
+id	../hello.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:50
+id	../hello.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:60
+index	../app/main/views.py	/^def index():$/;"	kind:function	line:12
+index	../hello.py	/^def index():$/;"	kind:function	line:92
+init_app	../config.py	/^    def init_app(app):$/;"	kind:member	line:14
+internal_server_error	../hello.py	/^def internal_server_error(e):$/;"	kind:function	line:127
+mail	../app/__init__.py	/^mail = Mail()$/;"	kind:variable	line:11
+mail	../hello.py	/^mail = Mail(app)$/;"	kind:variable	line:35
+mailtest.py	../tests/mailtest.py	1;"	kind:file	line:1
+main	../app/main/__init__.py	/^main = Blueprint('main', __name__)$/;"	kind:variable	line:3
+make_shell_context	../manage.py	/^def make_shell_context():$/;"	kind:function	line:16
+manage.py	../manage.py	1;"	kind:file	line:1
+manager	../hello.py	/^manager = Manager(app)$/;"	kind:variable	line:36
+manager	../manage.py	/^manager = Manager(app)$/;"	kind:variable	line:13
+mod_roel	../tests/sqltest.py	/^mod_roel = Role(name='Moderator')$/;"	kind:variable	line:11
+models.py	../app/models.py	1;"	kind:file	line:1
+moment	../app/__init__.py	/^moment = Moment()$/;"	kind:variable	line:12
+moment	../hello.py	/^moment = Moment(app)$/;"	kind:variable	line:44
+msg	../tests/mailtest.py	/^msg = Message('test subject', sender='zhanyunpeng1996@163.com',$/;"	kind:variable	line:8
+name	../app/main/forms.py	/^    name = StringField('What is your name?', validators=[Required()])$/;"	kind:variable	line:7
+name	../app/models.py	/^    name = db.Column(db.String(64), unique=True)$/;"	kind:variable	line:7
+name	../hello.py	/^    name = StringField('What is your name?', validators=[Required()])$/;"	kind:variable	line:87
+name	../hello.py	/^    name = db.Column(db.String(64), unique=True)$/;"	kind:variable	line:51
+page_not_found	../app/main/errors.py	/^def page_not_found(e):$/;"	kind:function	line:6
+page_not_found	../hello.py	/^def page_not_found(e):$/;"	kind:function	line:122
+recipients	../tests/mailtest.py	/^              recipients=['zhanyunpeng1996@163.com'])$/;"	kind:variable	line:9
+role_id	../app/models.py	/^    role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))$/;"	kind:variable	line:18
+role_id	../hello.py	/^    role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))$/;"	kind:variable	line:62
+send_async_email	../app/email.py	/^def send_async_email(app, msg):$/;"	kind:function	line:6
+send_async_email	../hello.py	/^def send_async_email(app, msg):$/;"	kind:function	line:69
+send_email	../app/email.py	/^def send_email(to, subject, template, **kwargs):$/;"	kind:function	line:11
+send_email	../hello.py	/^def send_email(to, subject, template, **kwargs):$/;"	kind:function	line:76
+sqltest.py	../tests/sqltest.py	1;"	kind:file	line:1
+submit	../app/main/forms.py	/^    submit = SubmitField('Submit')$/;"	kind:variable	line:8
+submit	../hello.py	/^    submit = SubmitField('Submit')$/;"	kind:variable	line:88
+test.py	../tests/test.py	1;"	kind:file	line:1
+usea	../hello.py	/^def usea(name):$/;"	kind:function	line:117
+user_john	../tests/sqltest.py	/^user_john = User(username='john', role=admin_role)$/;"	kind:variable	line:13
+user_role	../tests/sqltest.py	/^user_role = Role(name='User')$/;"	kind:variable	line:12
+user_steve	../tests/sqltest.py	/^user_steve = User(username='steve', role=user_role)$/;"	kind:variable	line:15
+user_susan	../tests/sqltest.py	/^user_susan = User(username='susan', role=user_role)$/;"	kind:variable	line:14
+username	../app/models.py	/^    username = db.Column(db.String(64), unique=True, index=True)$/;"	kind:variable	line:17
+username	../hello.py	/^    username = db.Column(db.String(64), unique=True, index=True)$/;"	kind:variable	line:61
+users	../app/models.py	/^    users = db.relationship('User', backref='role', lazy='dynamic')$/;"	kind:variable	line:8
+users	../hello.py	/^    users = db.relationship('User', backref='role')$/;"	kind:variable	line:52
+views.py	../app/main/views.py	1;"	kind:file	line:1
