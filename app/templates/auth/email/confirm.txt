@@ -1,0 +1,8 @@
+尊敬的 {{user.username}},
+Welcome!
+
+请点击下面链接完成注册：
+
+{{url_for('auth.confirm',token=token,_external=True)}}
+
+湛允鹏

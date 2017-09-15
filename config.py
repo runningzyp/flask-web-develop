@@ -22,15 +22,18 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
+    '''
     SQLALCHEMY_DATABASE_URI = 'sqlite:///' + \
         os.path.join(basedir, 'data-dev.sqlite')
+    '''
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:1996@localhost/dev'
 
 
 class TestingConfig(Config):
     TESTING = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('TEST_DATABASE_URL') or \
         'sqlite:///' + os.path.join(basedir, 'data-test.sqlite')
-
+    
 
 class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
