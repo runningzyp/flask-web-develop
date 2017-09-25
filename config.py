@@ -14,7 +14,8 @@ class Config:
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
     FLASKY_MAIL_SENDER = 'zhanyunpeng1996@163.com'
     FLASKY_ADMIN = '136688059@qq.com'
-
+   
+    
     @staticmethod
     def init_app(app):
         pass
@@ -33,7 +34,7 @@ class TestingConfig(Config):
     TESTING = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('TEST_DATABASE_URL') or \
         'sqlite:///' + os.path.join(basedir, 'data-test.sqlite')
-    
+
 
 class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \

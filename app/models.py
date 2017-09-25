@@ -6,6 +6,7 @@ from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from flask import current_app
 from datetime import datetime
 
+
 class Permission:
     FOLLOW = 0x01
     COMMENT = 0x02
@@ -60,6 +61,7 @@ class User(UserMixin, db.Model):
     name = db.Column(db.String(64))  # 姓名
     location = db.Column(db.String(64))  # 位置
     about_me = db.Column(db.Text())
+    real_avatar = db.Column(db.String(128), default=None)
     member_since = db.Column(db.DateTime(), default=datetime.utcnow)  # 注册日期
     last_seen = db.Column(db.DateTime(), default=datetime.utcnow)  # 最后登录日期
 
@@ -76,7 +78,7 @@ class User(UserMixin, db.Model):
         super(User, self).__init__(**kwargs)
         if self.role is None:
             if self.email == current_app.config['FLASKY_ADMIN']:
-                self.role = Role.query.filter_by(Permission=0xff).first()
+                self.role = Role.query.filter_by(permissions=0xff).first()
             if self.role is None:
                 self.role = Role.query.filter_by(default=True).first()
 
@@ -142,7 +144,7 @@ class User(UserMixin, db.Model):
 
 
 class AnonymousUser(AnonymousUserMixin):
-    def can(self, permission):
+    def can(self, permissions):
         return False
 
     def is_administrator(self):

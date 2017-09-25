@@ -4,116 +4,125 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-ADMINISTER	../app/models.py	/^    ADMINISTER = 0x80$/;"	kind:variable	line:14
-AnonymousUser	../app/models.py	/^class AnonymousUser(AnonymousUserMixin):$/;"	kind:class	line:144
+ADMINISTER	../app/models.py	/^    ADMINISTER = 0x80$/;"	kind:variable	line:15
+AnonymousUser	../app/models.py	/^class AnonymousUser(AnonymousUserMixin):$/;"	kind:class	line:146
 BasicTestCase	../tests/test_basics.py	/^class BasicTestCase(unittest.TestCase):$/;"	kind:class	line:6
-COMMENT	../app/models.py	/^    COMMENT = 0x02$/;"	kind:variable	line:11
+COMMENT	../app/models.py	/^    COMMENT = 0x02$/;"	kind:variable	line:12
 ChangePasswordForm	../app/auth/forms.py	/^class ChangePasswordForm(FlaskForm):$/;"	kind:class	line:41
 Config	../config.py	/^class Config:$/;"	kind:class	line:5
-DEBUG	../config.py	/^    DEBUG = True$/;"	kind:variable	line:24
-DevelopmentConfig	../config.py	/^class DevelopmentConfig(Config):$/;"	kind:class	line:23
-EditProfileAdminForm	../app/main/forms.py	/^class EditProfileAdminForm(FlaskForm):$/;"	kind:class	line:14
-EditProfileForm	../app/main/forms.py	/^class EditProfileForm(FlaskForm):$/;"	kind:class	line:7
+DEBUG	../config.py	/^    DEBUG = True$/;"	kind:variable	line:25
+DevelopmentConfig	../config.py	/^class DevelopmentConfig(Config):$/;"	kind:class	line:24
+EditProfileAdminForm	../app/main/forms.py	/^class EditProfileAdminForm(FlaskForm):$/;"	kind:class	line:16
+EditProfileForm	../app/main/forms.py	/^class EditProfileForm(FlaskForm):$/;"	kind:class	line:8
 FLASKY_ADMIN	../config.py	/^    FLASKY_ADMIN = '136688059@qq.com'$/;"	kind:variable	line:16
 FLASKY_MAIL_SENDER	../config.py	/^    FLASKY_MAIL_SENDER = 'zhanyunpeng1996@163.com'$/;"	kind:variable	line:15
 FLASKY_MAIL_SUBJECT_PREFIX	../config.py	/^    FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'$/;"	kind:variable	line:14
-FOLLOW	../app/models.py	/^    FOLLOW = 0x01$/;"	kind:variable	line:10
+FOLLOW	../app/models.py	/^    FOLLOW = 0x01$/;"	kind:variable	line:11
 LoginForm	../app/auth/forms.py	/^class LoginForm(FlaskForm):$/;"	kind:class	line:8
 MAIL_PASSWORD	../config.py	/^    MAIL_PASSWORD = 'zhan1996'$/;"	kind:variable	line:13
 MAIL_PORT	../config.py	/^    MAIL_PORT = 465$/;"	kind:variable	line:10
 MAIL_SERVER	../config.py	/^    MAIL_SERVER = 'smtp.163.com'$/;"	kind:variable	line:9
 MAIL_USERNAME	../config.py	/^    MAIL_USERNAME = 'zhanyunpeng1996@163.com'$/;"	kind:variable	line:12
 MAIL_USE_SSL	../config.py	/^    MAIL_USE_SSL = True$/;"	kind:variable	line:11
-MODERATE_COMMENTS	../app/models.py	/^    MODERATE_COMMENTS = 0x08$/;"	kind:variable	line:13
+MODERATE_COMMENTS	../app/models.py	/^    MODERATE_COMMENTS = 0x08$/;"	kind:variable	line:14
 NameForm	../hello.py	/^class NameForm(FlaskForm):$/;"	kind:class	line:86
-Permission	../app/models.py	/^class Permission:$/;"	kind:class	line:9
-ProductionConfig	../config.py	/^class ProductionConfig(Config):$/;"	kind:class	line:38
+Permission	../app/models.py	/^class Permission:$/;"	kind:class	line:10
+ProductionConfig	../config.py	/^class ProductionConfig(Config):$/;"	kind:class	line:39
 RegistrationForm	../app/auth/forms.py	/^class RegistrationForm(FlaskForm):$/;"	kind:class	line:20
 ResetPassword	../app/auth/forms.py	/^class ResetPassword(FlaskForm):$/;"	kind:class	line:16
-Role	../app/models.py	/^class Role(db.Model):$/;"	kind:class	line:22
+Role	../app/models.py	/^class Role(db.Model):$/;"	kind:class	line:23
 Role	../hello.py	/^class Role(db.Model):$/;"	kind:class	line:48
 SECRET_KEY	../config.py	/^    SECRET_KEY = 'hard to guess string'$/;"	kind:variable	line:6
 SQLALCHEMY_COMMIT_ON_TEARDOWN	../config.py	/^    SQLALCHEMY_COMMIT_ON_TEARDOWN = True$/;"	kind:variable	line:7
-SQLALCHEMY_DATABASE_URI	../config.py	/^        'sqlite:\/\/\/' + os.path.join(basedir, 'data-test.sqlite')$/;"	kind:variable	line:35
-SQLALCHEMY_DATABASE_URI	../config.py	/^        'sqlite:\/\/\/' + os.path.join(basedir, 'data.sqlite')$/;"	kind:variable	line:40
-SQLALCHEMY_DATABASE_URI	../config.py	/^    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql:\/\/root:1996@localhost\/dev'$/;"	kind:variable	line:29
+SQLALCHEMY_DATABASE_URI	../config.py	/^        'sqlite:\/\/\/' + os.path.join(basedir, 'data-test.sqlite')$/;"	kind:variable	line:36
+SQLALCHEMY_DATABASE_URI	../config.py	/^        'sqlite:\/\/\/' + os.path.join(basedir, 'data.sqlite')$/;"	kind:variable	line:41
+SQLALCHEMY_DATABASE_URI	../config.py	/^    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql:\/\/root:1996@localhost\/dev'$/;"	kind:variable	line:30
 SQLALCHEMY_TRACK_MODIFICATIONS	../config.py	/^    SQLALCHEMY_TRACK_MODIFICATIONS = False$/;"	kind:variable	line:8
-TESTING	../config.py	/^    TESTING = True$/;"	kind:variable	line:33
-TestingConfig	../config.py	/^class TestingConfig(Config):$/;"	kind:class	line:32
-User	../app/models.py	/^class User(UserMixin, db.Model):$/;"	kind:class	line:55
+TESTING	../config.py	/^    TESTING = True$/;"	kind:variable	line:34
+TestingConfig	../config.py	/^class TestingConfig(Config):$/;"	kind:class	line:33
+UPLOAD_FOLDER	../app/main/views.py	/^UPLOAD_FOLDER = os.getcwd() + "\/app\/static\/avatar\/"$/;"	kind:variable	line:13
+UploadForm	../test.py	/^class UploadForm(FlaskForm):$/;"	kind:class	line:19
+User	../app/models.py	/^class User(UserMixin, db.Model):$/;"	kind:class	line:56
 User	../hello.py	/^class User(db.Model):$/;"	kind:class	line:58
 UserModelTestCase	../tests/test_user_model.py	/^class UserModelTestCase(unittest.TestCase):$/;"	kind:class	line:6
-WRITE_ARTICLES	../app/models.py	/^    WRITE_ARTICLES = 0x04$/;"	kind:variable	line:12
-__init__	../app/models.py	/^    def __init__(self, **kwargs):  # 赋予角色权限$/;"	kind:member	line:75
+WRITE_ARTICLES	../app/models.py	/^    WRITE_ARTICLES = 0x04$/;"	kind:variable	line:13
+__init__	../app/main/forms.py	/^    def __init__(self, user, *args, **kwargs):$/;"	kind:member	line:31
+__init__	../app/models.py	/^    def __init__(self, **kwargs):  # 赋予角色权限$/;"	kind:member	line:77
 __init__.py	../app/__init__.py	1;"	kind:file	line:1
 __init__.py	../app/auth/__init__.py	1;"	kind:file	line:1
 __init__.py	../app/main/__init__.py	1;"	kind:file	line:1
 __init__.py	../tests/__init__.py	1;"	kind:file	line:1
-__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:140
-__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:51
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:142
+__repr__	../app/models.py	/^    def __repr__(self):$/;"	kind:member	line:52
 __repr__	../hello.py	/^    def __repr__(self):$/;"	kind:member	line:54
 __repr__	../hello.py	/^    def __repr__(self):$/;"	kind:member	line:64
-__tablename__	../app/models.py	/^    __tablename__ = 'roles'$/;"	kind:variable	line:23
-__tablename__	../app/models.py	/^    __tablename__ = 'users'$/;"	kind:variable	line:57
+__tablename__	../app/models.py	/^    __tablename__ = 'roles'$/;"	kind:variable	line:24
+__tablename__	../app/models.py	/^    __tablename__ = 'users'$/;"	kind:variable	line:58
 __tablename__	../hello.py	/^    __tablename__ = 'roles'$/;"	kind:variable	line:49
 __tablename__	../hello.py	/^    __tablename__ = 'users'$/;"	kind:variable	line:59
-about_me	../app/main/forms.py	/^    about_me = TextAreaField('关于我')$/;"	kind:variable	line:10
-about_me	../app/models.py	/^    about_me = db.Column(db.Text())$/;"	kind:variable	line:62
+about_me	../app/main/forms.py	/^    about_me = TextAreaField('关于我')$/;"	kind:variable	line:12
+about_me	../app/main/forms.py	/^    about_me = TextAreaField('关于我')$/;"	kind:variable	line:27
+about_me	../app/models.py	/^    about_me = db.Column(db.Text())$/;"	kind:variable	line:63
 admin_required	../app/decorator.py	/^def admin_required(f):$/;"	kind:function	line:18
 admin_role	../tests/sqltest.py	/^admin_role = Role(name='Admin')$/;"	kind:variable	line:10
 app	../hello.py	/^app = Flask(__name__)$/;"	kind:variable	line:22
-app	../manage.py	/^app = create_app('default')$/;"	kind:variable	line:11
+app	../manage.py	/^app = create_app('default')$/;"	kind:variable	line:12
+app	../test.py	/^app = Flask(__name__)$/;"	kind:variable	line:10
 auth	../app/auth/__init__.py	/^auth = Blueprint('auth', __name__)$/;"	kind:variable	line:2
+avatar	../app/main/forms.py	/^    avatar = FileField('头像')$/;"	kind:variable	line:11
 basedir	../config.py	/^basedir = os.path.abspath(os.path.dirname(__file__))$/;"	kind:variable	line:2
 basedir	../hello.py	/^basedir = os.path.abspath(os.path.dirname(__file__))$/;"	kind:variable	line:20
-before_request	../app/auth/views.py	/^def before_request():$/;"	kind:function	line:99
+before_request	../app/auth/views.py	/^def before_request():$/;"	kind:function	line:96
 bootstrap	../app/__init__.py	/^bootstrap = Bootstrap()$/;"	kind:variable	line:12
 bootstrap	../hello.py	/^bootstrap = Bootstrap(app)$/;"	kind:variable	line:43
-can	../app/models.py	/^    def can(self, permission):$/;"	kind:member	line:145
-can	../app/models.py	/^    def can(self, permissions):$/;"	kind:member	line:83
-change_password	../app/auth/views.py	/^def change_password():$/;"	kind:function	line:117
-config	../config.py	/^config = {$/;"	kind:variable	line:43
+can	../app/models.py	/^    def can(self, permissions):$/;"	kind:member	line:147
+can	../app/models.py	/^    def can(self, permissions):$/;"	kind:member	line:85
+change_password	../app/auth/views.py	/^def change_password():$/;"	kind:function	line:114
+config	../config.py	/^config = {$/;"	kind:variable	line:44
 config	../migrations/env.py	/^config = context.config$/;"	kind:variable	line:9
 config.py	../config.py	1;"	kind:file	line:1
-confirm	../app/auth/views.py	/^def confirm(token):$/;"	kind:function	line:77
-confirm	../app/models.py	/^    def confirm(self, token):$/;"	kind:member	line:94
-confirmed	../app/models.py	/^    confirmed = db.Column(db.Boolean, default=False)$/;"	kind:variable	line:70
+confirm	../app/auth/views.py	/^def confirm(token):$/;"	kind:function	line:74
+confirm	../app/models.py	/^    def confirm(self, token):$/;"	kind:member	line:96
+confirmed	../app/main/forms.py	/^    confirmed = BooleanField('已注册')$/;"	kind:variable	line:23
+confirmed	../app/models.py	/^    confirmed = db.Column(db.Boolean, default=False)$/;"	kind:variable	line:72
 create_app	../app/__init__.py	/^def create_app(config_name):$/;"	kind:function	line:18
 db	../app/__init__.py	/^db = SQLAlchemy()$/;"	kind:variable	line:15
 db	../hello.py	/^db = SQLAlchemy(app)$/;"	kind:variable	line:42
 decorated_funtion	../app/decorator.py	/^        def decorated_funtion(*args, **kwargs):$/;"	kind:function	line:10
 decorator	../app/decorator.py	/^    def decorator(f):$/;"	kind:function	line:8
 decorator.py	../app/decorator.py	1;"	kind:file	line:1
-default	../app/models.py	/^    default = db.Column(db.Boolean, default=False, index=True)$/;"	kind:variable	line:26
-edit_profile	../app/main/views.py	/^def edit_profile():$/;"	kind:function	line:23
+default	../app/models.py	/^    default = db.Column(db.Boolean, default=False, index=True)$/;"	kind:variable	line:27
+edit_profile	../app/main/views.py	/^def edit_profile():$/;"	kind:function	line:39
+edit_profile_admin	../app/main/views.py	/^def edit_profile_admin(id):$/;"	kind:function	line:68
 email	../app/auth/forms.py	/^    email = StringField('Email', validators=[Required(), Length(1, 64),$/;"	kind:variable	line:9
 email	../app/auth/forms.py	/^    email = StringField('邮箱', validators=[Required(), Length(1, 64),$/;"	kind:variable	line:21
-email	../app/main/forms.py	/^    email = StringField('邮箱', validators=[Required(), Length(1, 64),$/;"	kind:variable	line:15
-email	../app/models.py	/^    email = db.Column(db.String(64), unique=True, index=True)$/;"	kind:variable	line:59
+email	../app/main/forms.py	/^    email = StringField('邮箱', validators=[Required(), Length(1, 64),$/;"	kind:variable	line:17
+email	../app/models.py	/^    email = db.Column(db.String(64), unique=True, index=True)$/;"	kind:variable	line:60
 email.py	../app/email.py	1;"	kind:file	line:1
 env.py	../migrations/env.py	1;"	kind:file	line:1
 errors.py	../app/main/errors.py	1;"	kind:file	line:1
 forms.py	../app/auth/forms.py	1;"	kind:file	line:1
 forms.py	../app/main/forms.py	1;"	kind:file	line:1
-generate_confirmtion_token	../app/models.py	/^    def generate_confirmtion_token(self, expiration=3600):  # 3600s =1h$/;"	kind:member	line:90
-generate_reset_token	../app/models.py	/^    def generate_reset_token(self, expiration=3600):$/;"	kind:member	line:109
+generate_confirmtion_token	../app/models.py	/^    def generate_confirmtion_token(self, expiration=3600):  # 3600s =1h$/;"	kind:member	line:92
+generate_reset_token	../app/models.py	/^    def generate_reset_token(self, expiration=3600):$/;"	kind:member	line:111
 hello.py	../hello.py	1;"	kind:file	line:1
-id	../app/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:24
-id	../app/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:58
+id	../app/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:25
+id	../app/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:59
 id	../hello.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:50
 id	../hello.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:60
-index	../app/main/views.py	/^def index():$/;"	kind:function	line:10
+index	../app/main/views.py	/^def index():$/;"	kind:function	line:17
 index	../hello.py	/^def index():$/;"	kind:function	line:92
-init_app	../config.py	/^    def init_app(app):$/;"	kind:member	line:19
+init_app	../config.py	/^    def init_app(app):$/;"	kind:member	line:20
 inject_permissions	../app/main/__init__.py	/^def inject_permissions():$/;"	kind:function	line:9
-insert_roles	../app/models.py	/^    def insert_roles():$/;"	kind:member	line:31
+insert_roles	../app/models.py	/^    def insert_roles():$/;"	kind:member	line:32
 internal_server_error	../hello.py	/^def internal_server_error(e):$/;"	kind:function	line:127
-is_administrator	../app/models.py	/^    def is_administrator(self):$/;"	kind:member	line:148
-is_administrator	../app/models.py	/^    def is_administrator(self):$/;"	kind:member	line:87
-last_seen	../app/models.py	/^    last_seen = db.Column(db.DateTime(), default=datetime.utcnow)  # 最后登录日期$/;"	kind:variable	line:64
-load_user	../app/models.py	/^def load_user(user_id):$/;"	kind:function	line:18
-location	../app/main/forms.py	/^    location = StringField('住址', validators=[Length(0, 64)])$/;"	kind:variable	line:9
-location	../app/models.py	/^    location = db.Column(db.String(64))  # 位置$/;"	kind:variable	line:61
+is_administrator	../app/models.py	/^    def is_administrator(self):$/;"	kind:member	line:150
+is_administrator	../app/models.py	/^    def is_administrator(self):$/;"	kind:member	line:89
+last_seen	../app/models.py	/^    last_seen = db.Column(db.DateTime(), default=datetime.utcnow)  # 最后登录日期$/;"	kind:variable	line:66
+load_user	../app/models.py	/^def load_user(user_id):$/;"	kind:function	line:19
+location	../app/main/forms.py	/^    location = StringField('位置', validators=[Length(0, 64)])$/;"	kind:variable	line:26
+location	../app/main/forms.py	/^    location = StringField('住址', validators=[Length(0, 64)])$/;"	kind:variable	line:10
+location	../app/models.py	/^    location = db.Column(db.String(64))  # 位置$/;"	kind:variable	line:62
 logger	../migrations/env.py	/^logger = logging.getLogger('alembic.env')$/;"	kind:variable	line:14
 login	../app/auth/views.py	/^def login():$/;"	kind:function	line:16
 login_manager	../app/__init__.py	/^login_manager = LoginManager()$/;"	kind:variable	line:9
@@ -122,21 +131,22 @@ mail	../app/__init__.py	/^mail = Mail()$/;"	kind:variable	line:13
 mail	../hello.py	/^mail = Mail(app)$/;"	kind:variable	line:35
 mailtest.py	../tests/mailtest.py	1;"	kind:file	line:1
 main	../app/main/__init__.py	/^main = Blueprint('main', __name__)$/;"	kind:variable	line:3
-make_shell_context	../manage.py	/^def make_shell_context():$/;"	kind:function	line:17
+make_shell_context	../manage.py	/^def make_shell_context():$/;"	kind:function	line:19
 manage.py	../manage.py	1;"	kind:file	line:1
 manager	../hello.py	/^manager = Manager(app)$/;"	kind:variable	line:36
-manager	../manage.py	/^manager = Manager(app)$/;"	kind:variable	line:13
-member_since	../app/models.py	/^    member_since = db.Column(db.DateTime(), default=datetime.utcnow)  # 注册日期$/;"	kind:variable	line:63
+manager	../manage.py	/^manager = Manager(app)$/;"	kind:variable	line:14
+member_since	../app/models.py	/^    member_since = db.Column(db.DateTime(), default=datetime.utcnow)  # 注册日期$/;"	kind:variable	line:65
 message	../app/auth/forms.py	/^                                                                message='密码必须相同')])$/;"	kind:variable	line:45
-migrate	../manage.py	/^migrate = Migrate(app, db)$/;"	kind:variable	line:14
+migrate	../manage.py	/^migrate = Migrate(app, db)$/;"	kind:variable	line:15
 mod_roel	../tests/sqltest.py	/^mod_roel = Role(name='Moderator')$/;"	kind:variable	line:11
 models.py	../app/models.py	1;"	kind:file	line:1
 moment	../app/__init__.py	/^moment = Moment()$/;"	kind:variable	line:14
 moment	../hello.py	/^moment = Moment(app)$/;"	kind:variable	line:44
 msg	../tests/mailtest.py	/^msg = Message('test subject', sender='zhanyunpeng1996@163.com',$/;"	kind:variable	line:8
-name	../app/main/forms.py	/^    name = StringField('真实姓名', validators=[Length(0, 64)])$/;"	kind:variable	line:8
-name	../app/models.py	/^    name = db.Column(db.String(64))  # 姓名$/;"	kind:variable	line:60
-name	../app/models.py	/^    name = db.Column(db.String(64), unique=True)$/;"	kind:variable	line:25
+name	../app/main/forms.py	/^    name = StringField('真实姓名', validators=[Length(0, 64)])$/;"	kind:variable	line:25
+name	../app/main/forms.py	/^    name = StringField('真实姓名', validators=[Length(0, 64)])$/;"	kind:variable	line:9
+name	../app/models.py	/^    name = db.Column(db.String(64))  # 姓名$/;"	kind:variable	line:61
+name	../app/models.py	/^    name = db.Column(db.String(64), unique=True)$/;"	kind:variable	line:26
 name	../hello.py	/^    name = StringField('What is your name?', validators=[Required()])$/;"	kind:variable	line:87
 name	../hello.py	/^    name = db.Column(db.String(64), unique=True)$/;"	kind:variable	line:51
 newpassword	../app/auth/forms.py	/^    newpassword = PasswordField('新密码密码',$/;"	kind:variable	line:43
@@ -147,20 +157,24 @@ page_not_found	../hello.py	/^def page_not_found(e):$/;"	kind:function	line:122
 password	../app/auth/forms.py	/^    password = PasswordField($/;"	kind:variable	line:26
 password	../app/auth/forms.py	/^    password = PasswordField('Password', validators=[Required()])$/;"	kind:variable	line:11
 password	../app/auth/forms.py	/^    password = PasswordField('新密码', validators=[Required()])$/;"	kind:variable	line:17
-password	../app/models.py	/^    def password(self):$/;"	kind:member	line:126
-password	../app/models.py	/^    def password(self, password):$/;"	kind:member	line:130
+password	../app/models.py	/^    def password(self):$/;"	kind:member	line:128
+password	../app/models.py	/^    def password(self, password):$/;"	kind:member	line:132
 password2	../app/auth/forms.py	/^    password2 = PasswordField('重复密码', validators=[Required()])$/;"	kind:variable	line:28
-password_hash	../app/models.py	/^    password_hash = db.Column(db.String(128))$/;"	kind:variable	line:67
-permission_required	../app/decorator.py	/^def permission_required(Permission):$/;"	kind:function	line:7
-permissions	../app/models.py	/^    permissions = db.Column(db.Integer)$/;"	kind:variable	line:27
-ping	../app/models.py	/^    def ping(self):  # 最后访问时间$/;"	kind:member	line:136
+password_hash	../app/models.py	/^    password_hash = db.Column(db.String(128))$/;"	kind:variable	line:69
+permission_required	../app/decorator.py	/^def permission_required(permission):$/;"	kind:function	line:7
+permissions	../app/models.py	/^    permissions = db.Column(db.Integer)$/;"	kind:variable	line:28
+photo	../test.py	/^    photo = FileField(validators=[$/;"	kind:variable	line:20
+photos	../test.py	/^photos = UploadSet('photos', IMAGES)$/;"	kind:variable	line:14
+ping	../app/models.py	/^    def ping(self):  # 最后访问时间$/;"	kind:member	line:138
 process_revision_directives	../migrations/env.py	/^    def process_revision_directives(context, revision, directives):$/;"	kind:function	line:61
+real_avatar	../app/models.py	/^    real_avatar = db.Column(db.String(128), default=None)$/;"	kind:variable	line:64
 recipients	../tests/mailtest.py	/^              recipients=['zhanyunpeng1996@163.com'])$/;"	kind:variable	line:9
 register	../app/auth/views.py	/^def register():$/;"	kind:function	line:54
 remember_me	../app/auth/forms.py	/^    remember_me = BooleanField('keep me loggedd in')$/;"	kind:variable	line:12
-resend_confirm	../app/auth/views.py	/^def resend_confirm():$/;"	kind:function	line:89
-reset_password	../app/models.py	/^    def reset_password(self, token):$/;"	kind:member	line:113
-role_id	../app/models.py	/^    role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))$/;"	kind:variable	line:68
+resend_confirm	../app/auth/views.py	/^def resend_confirm():$/;"	kind:function	line:86
+reset_password	../app/models.py	/^    def reset_password(self, token):$/;"	kind:member	line:115
+role	../app/main/forms.py	/^    role = SelectField('Role', coerce=int)$/;"	kind:variable	line:24
+role_id	../app/models.py	/^    role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))$/;"	kind:variable	line:70
 role_id	../hello.py	/^    role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))$/;"	kind:variable	line:62
 run_migrations_offline	../migrations/env.py	/^def run_migrations_offline():$/;"	kind:function	line:31
 run_migrations_online	../migrations/env.py	/^def run_migrations_online():$/;"	kind:function	line:50
@@ -173,11 +187,14 @@ sqltest.py	../tests/sqltest.py	1;"	kind:file	line:1
 submit	../app/auth/forms.py	/^    submit = SubmitField('Log In')$/;"	kind:variable	line:13
 submit	../app/auth/forms.py	/^    submit = SubmitField('提交更改')$/;"	kind:variable	line:47
 submit	../app/auth/forms.py	/^    submit = SubmitField('注册')$/;"	kind:variable	line:30
-submit	../app/main/forms.py	/^    submit = SubmitField('提交')$/;"	kind:variable	line:11
+submit	../app/main/forms.py	/^    submit = SubmitField('提交')$/;"	kind:variable	line:13
+submit	../app/main/forms.py	/^    submit = SubmitField('提交')$/;"	kind:variable	line:29
 submit	../hello.py	/^    submit = SubmitField('Submit')$/;"	kind:variable	line:88
+submit	../test.py	/^    submit = SubmitField(u'上传')$/;"	kind:variable	line:23
 target_metadata	../migrations/env.py	/^target_metadata = current_app.extensions['migrate'].db.metadata$/;"	kind:variable	line:23
 tearDown	../tests/test_basics.py	/^    def tearDown(self):$/;"	kind:member	line:13
-test	../manage.py	/^def test():$/;"	kind:function	line:26
+test	../manage.py	/^def test():$/;"	kind:function	line:28
+test.py	../test.py	1;"	kind:file	line:1
 test_anonymous_user	../tests/test_user_model.py	/^    def test_anonymous_user(self):$/;"	kind:member	line:32
 test_app_exists	../tests/test_basics.py	/^    def test_app_exists(self):$/;"	kind:member	line:18
 test_app_is_testing	../tests/test_basics.py	/^    def test_app_is_testing(self):$/;"	kind:member	line:21
@@ -188,22 +205,26 @@ test_password_verification	../tests/test_user_model.py	/^    def test_password_v
 test_passworld_setter	../tests/test_user_model.py	/^    def test_passworld_setter(self):$/;"	kind:member	line:7
 test_roles_and_permissions	../tests/test_user_model.py	/^    def test_roles_and_permissions(self):$/;"	kind:member	line:26
 test_user_model.py	../tests/test_user_model.py	1;"	kind:file	line:1
-unconfirmed	../app/auth/views.py	/^def unconfirmed():$/;"	kind:function	line:109
+unconfirmed	../app/auth/views.py	/^def unconfirmed():$/;"	kind:function	line:106
+upload_file	../app/main/views.py	/^def upload_file():$/;"	kind:function	line:30
+upload_file	../test.py	/^def upload_file():$/;"	kind:function	line:27
 usea	../hello.py	/^def usea(name):$/;"	kind:function	line:117
-user	../app/main/views.py	/^def user(username):$/;"	kind:function	line:15
+user	../app/main/views.py	/^def user(username):$/;"	kind:function	line:22
 user_john	../tests/sqltest.py	/^user_john = User(username='john', role=admin_role)$/;"	kind:variable	line:13
 user_role	../tests/sqltest.py	/^user_role = Role(name='User')$/;"	kind:variable	line:12
 user_steve	../tests/sqltest.py	/^user_steve = User(username='steve', role=user_role)$/;"	kind:variable	line:15
 user_susan	../tests/sqltest.py	/^user_susan = User(username='susan', role=user_role)$/;"	kind:variable	line:14
 username	../app/auth/forms.py	/^    username = StringField('用户名', validators=[Required(), Length($/;"	kind:variable	line:24
-username	../app/main/forms.py	/^    username = StringField('用户名', validators=[Required(), Length($/;"	kind:variable	line:18
-username	../app/models.py	/^    username = db.Column(db.String(64), unique=True, index=True)$/;"	kind:variable	line:66
+username	../app/main/forms.py	/^    username = StringField('用户名', validators=[Required(), Length($/;"	kind:variable	line:20
+username	../app/models.py	/^    username = db.Column(db.String(64), unique=True, index=True)$/;"	kind:variable	line:68
 username	../hello.py	/^    username = db.Column(db.String(64), unique=True, index=True)$/;"	kind:variable	line:61
-users	../app/models.py	/^    users = db.relationship('User', backref='role', lazy='dynamic')$/;"	kind:variable	line:28
+users	../app/models.py	/^    users = db.relationship('User', backref='role', lazy='dynamic')$/;"	kind:variable	line:29
 users	../hello.py	/^    users = db.relationship('User', backref='role')$/;"	kind:variable	line:52
 validate_email	../app/auth/forms.py	/^    def validate_email(self, field):$/;"	kind:member	line:32
+validate_email	../app/main/forms.py	/^    def validate_email(self, field):$/;"	kind:member	line:37
 validate_username	../app/auth/forms.py	/^    def validate_username(self, field):$/;"	kind:member	line:36
+validate_username	../app/main/forms.py	/^    def validate_username(self, field):$/;"	kind:member	line:42
 validators	../app/auth/forms.py	/^                                validators=[Required(), EqualTo('newpassword2',$/;"	kind:variable	line:44
-verify_password	../app/models.py	/^    def verify_password(self, password):$/;"	kind:member	line:133
+verify_password	../app/models.py	/^    def verify_password(self, password):$/;"	kind:member	line:135
 views.py	../app/auth/views.py	1;"	kind:file	line:1
 views.py	../app/main/views.py	1;"	kind:file	line:1

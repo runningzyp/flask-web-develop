@@ -54,9 +54,6 @@ def reset_password():
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
-        if form.email.data == current_app.config['FLASKY_ADMIN']:
-            flash('该账号已被使用')
-            return render_template('auth/login.html', form=form)
         user = User(email=form.email.data,
                     username=form.username.data,
                     password=form.password.data)
@@ -68,7 +65,7 @@ def register():
                    user=user, token=token)
 
         flash('我们已经发送了注册邮件，请按照提示操作')
-        return redirect(url_for('main.index'))
+        return redirect(url_for('auth.login'))
     return render_template('auth/register.html', form=form)
 
 

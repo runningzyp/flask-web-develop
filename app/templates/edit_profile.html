@@ -4,8 +4,11 @@
 {% block page_content %}
 <div class="page-header">
     <h1>修改资料</h1>
+   
 </div>
+
 <div class="col-md-4">
-    {{wtf.quick_form(form)}}
+    {{wtf.quick_form(form, method="POST", enctype="multipart/form-data")}}
+    <!-- 不打enctype会出现flask.debughelpers.DebugFilesKeyError-->
 </div>
 {% endblock %}

@@ -1,9 +1,16 @@
-from flask import render_template, flash, redirect, url_for
-from flask_login import current_user
-from ..models import User
+from flask import Flask, render_template, flash, redirect, url_for, request
+from flask import current_app
+
+from flask_login import current_user, logout_user, login_required
+from ..models import User, Role
+from ..decorator import admin_required
 from . import main
-from .forms import EditProfileForm
+
+
+from .forms import EditProfileForm, EditProfileAdminForm
 from .. import db
+import os
+UPLOAD_FOLDER = os.getcwd() + "/app/static/avatar/"
 
 
 @main.route('/')
@@ -19,6 +26,15 @@ def user(username):
     return render_template('user.html', user=user)
 
 
+@main.route('/upload_file', methods=['GET', 'POST'])
+def upload_file():
+    if request.method == 'POST':
+        file = request.files['file']
+        file.save(os.path.join(UPLOAD_FOLDER, file.filename))
+        flash('ok')
+    return render_template('upload.html')
+
+
 @main.route('/edit-profile', methods=['GET', 'POST'])
 def edit_profile():
     form = EditProfileForm()
@@ -26,6 +42,17 @@ def edit_profile():
         current_user.name = form.name.data
         current_user.location = form.location.data
         current_user.about_me = form.about_me.data
+        if request.method == 'POST':
+            avatar = request.files['avatar']
+            filename = current_user.username + \
+                '.' + avatar.filename.split('.')[-1]
+            if filename != current_user.username+'.':
+                if os.path.exists(os.path.join(UPLOAD_FOLDER, filename)):
+                    os.remove(os.path.join(UPLOAD_FOLDER, filename))
+
+                avatar.save(os.path.join(UPLOAD_FOLDER, filename))
+                current_user.real_avatar = '/static/avatar/' + filename
+            # os.path.join(“home”, "me", "mywork")->“home/me/mywork"
         db.session.add(current_user)
         flash('修改信息成功')
         return redirect(url_for('main.user', username=current_user.username))
@@ -33,3 +60,29 @@ def edit_profile():
     form.location.data = current_user.location
     form.about_me.data = current_user.about_me
     return render_template('edit_profile.html', form=form)
+
+
+@main.route('/edit-profile/<int:id>', methods=['GET', 'POST'])
+@login_required
+@admin_required
+def edit_profile_admin(id):
+    user = User.query.get_or_404(id)
+    form = EditProfileAdminForm(user=user)
+    if form.validate_on_submit():
+        user.username = form.username.data
+        user.confirmed = form.confirmed.data
+        user.role = Role.query.get(form.role.data)
+        user.name = form.name.data
+        user.location = form.location.data
+        user.adout_me = form.about_me.data
+        db.session.add(user)
+        flash('信息已更改')
+        return redirect(url_for("main.user", username=user.username))
+    form.email.data = user.email
+    form.username.data = user.username
+    form.confirmed.da = user.confirmed
+    form.role.data = user.role
+    form.name.data = user.name
+    form.location.data = user.location
+    form.about_me.data = user.about_me
+    return render_template('edit_profile.html', form=form, user=user)
