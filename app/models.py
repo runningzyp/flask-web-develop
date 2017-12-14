@@ -53,6 +53,14 @@ class Role(db.Model):
         return '<Role %r>' % self.name
 
 
+class Post(db.Model):
+    __tablename__ = 'posts'
+    id = db.Column(db.Integer, primary_key=True)
+    body = db.Column(db.Text)
+    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+
+
 class User(UserMixin, db.Model):
 
     __tablename__ = 'users'
@@ -64,6 +72,7 @@ class User(UserMixin, db.Model):
     real_avatar = db.Column(db.String(128), default=None)
     member_since = db.Column(db.DateTime(), default=datetime.utcnow)  # 注册日期
     last_seen = db.Column(db.DateTime(), default=datetime.utcnow)  # 最后登录日期
+    posts = db.relationship('Post', backref='author', lazy='dynamic')
 
     username = db.Column(db.String(64), unique=True, index=True)
     password_hash = db.Column(db.String(128))

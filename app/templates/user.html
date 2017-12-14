@@ -5,7 +5,7 @@
 {% block page_content %}
 
 {% if user.real_avatar %}
-<img class="img-rounded profile-thumbnail" src="{{ user.real_avatar }}?v=1.0">
+<img class="img-rounded profile-thumbnail" width="57" height="110" src="{{ user.real_avatar }}?v=1.0">
 {% else %}
 <img class="img-rounded profile-thumbnail" src="/static/avatar/default.jpg?v=1.0">
 {% endif %}
@@ -30,8 +30,9 @@
             <br>
             Last seen {{ moment(user.last_seen).fromNow() }}.
         </p>
-        <a class="btn btn-default" href="{{url_for('main.upload_file')}}">更换头像</a>
+        
         {% if user ==current_user %}
+        <a class="btn btn-default" href="{{url_for('main.upload_file')}}">更换头像</a>
         <a class="btn btn-default" href="{{url_for('main.edit_profile')}}">修改资料</a>
         {% endif %}
         {% if current_user.is_administrator() %}
