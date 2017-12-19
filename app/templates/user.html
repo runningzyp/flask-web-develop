@@ -5,9 +5,9 @@
 {% block page_content %}
 
 {% if user.real_avatar %}
-<img class="img-rounded profile-thumbnail" width="57" height="110" src="{{ user.real_avatar }}?v=1.0">
+<img class="img-rounded " width="57" height="110" src="{{ user.real_avatar }}?v=1.0">
 {% else %}
-<img class="img-rounded profile-thumbnail" src="/static/avatar/default.jpg?v=1.0">
+<img class="img-rounded " src="/static/avatar/default.jpg?v=1.0">
 {% endif %}
     <div class="page-header">
         <h1>{{user.username}}</h1>
@@ -39,4 +39,6 @@
         <a class="btn btn-danger" href="{{ url_for('.edit_profile_admin', id=user.id) }}">修改资料 [管理员]</a>
         {% endif %}
     </div>
+    <h3> 最近动态</h3>
+    {% include '_posts.html' %}
 {% endblock %}
